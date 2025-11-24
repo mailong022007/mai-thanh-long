@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shop Đồ Chơi - HTML cơ bản</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 16px; background:#f5f7fa; color:#111; }
+    header { background:#fff; padding:12px 16px; border-bottom:1px solid #e6e9ef; }
+    .brand { font-weight:700; }
+    .container { max-width:900px; margin:18px auto; }
+    .grid { display:flex; gap:12px; flex-wrap:wrap; }
+    .card { background:#fff; padding:12px; border-radius:8px; width:calc(33% - 8px); box-shadow:0 1px 3px rgba(0,0,0,0.06); }
+    .card img { width:100%; height:120px; object-fit:cover; border-radius:6px; }
+    .price { color:#e55353; font-weight:700; margin-top:8px; }
+    footer { margin-top:20px; font-size:13px; color:#666; text-align:center; }
+    @media (max-width:700px){ .card { width:calc(50% - 8px); } }
+    @media (max-width:420px){ .card { width:100%; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">Shop Đồ Chơi trẻ em</div>
+  </header>
+  <div class="container">
+    <h2>Sản phẩm nổi bật</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="bộ xếp hình.jpg" alt="Bộ xếp hình">
+        <h3>Bộ xếp hình gỗ</h3>
+        <div class="price">150.000₫</div>
+        <p>Phù hợp từ 3 tuổi. Giáo dục & giải trí.</p>
+      </div>
+
+      <div class="card">
+        <img src="gấu bông.jpg" alt="Gấu bông">
+        <h3>Gấu bông Teddy 40cm</h3>
+        <div class="price">220.000₫</div>
+        <p>Mềm mại, an toàn cho trẻ em.</p>
+      </div>
+
+      <div class="card">
+        <img src="xe điều khiển.jpg" alt="Xe điều khiển">
+        <h3>Xe ô tô điều khiển</h3>
+        <div class="price">320.000₫</div>
+        <p>Pin sạc, dễ điều khiển.</p>
+      </div>
+    </div>
+
+    <section style="margin-top:18px;">
+      <h3>Liên hệ</h3>
+      <p>Địa chỉ: Số 1 Phố Xốm Hà Đông Hà Nội SĐT: 0926679471</p>
+    </section>
+  </div>
+
+  <footer>
+     2025 Shop Đồ Chơi
+  </footer>
+</body>
+</html>
